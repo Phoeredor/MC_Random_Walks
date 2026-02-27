@@ -1,0 +1,6 @@
+*.o
+program_*
+*/src/program
+*/src/lattice_gas
+results/
+*.bin
