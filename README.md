@@ -7,32 +7,13 @@ Numerical simulations of **stochastic processes** in C — 1D/2D random walks an
 ## 📁 Project Structure
 
 ```
-.
-├── 01_1d_random_walk/
-│   ├── include/
-│   │   └── seed_generator.h
-│   └── src/
-│       ├── main_dat.c     # 1D random walk: trajectories & <x²(t)>
-│       └── seed_generator.c
-├── 02_2d_random_walk/
-│   ├── include/
-│   │   └── seed_generator.h
-│   └── src/
-│       ├── 2d_ran_walk.c  # 2D lattice random walk: trajectories & P(x)
-│       └── seed_generator.c
-├── 03_diffusion_coefficient/
-│   ├── include/
-│   │   ├── pcg32.h
-│   │   └── seed_generator.h
-│   └── src/
-│       ├── diff_coef.c    # Lattice gas model: D(ρ,t) measurement
-│       ├── pcg32.c
-│       └── seed_generator.c
-├── generate_data.sh       # Script to compile & run all simulations
-├── LICENSE                # MIT License
-├── make_plots.gp          # Gnuplot script generating all 8 figures
-├── plots/                 # Generated PNG figures folder
-└── README.md
+MC_Random_Walks/
+├── 01_1d_random_walk/        # 1D random walk: trajectories & <x²(t)>
+├── 02_2d_random_walk/        # 2D lattice random walk: trajectories & P(x)
+├── 03_diffusion_coefficient/ # Lattice gas model: D(ρ,t) measurement
+├── generate_data.sh          # Compiles & runs all simulations
+├── make_plots.gp             # Gnuplot script for all 8 figures
+└── plots/                    # Generated PNG figures
 ```
 
 ## 🔬 Simulations
