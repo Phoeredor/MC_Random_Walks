@@ -15,7 +15,7 @@ set style line 4 lc rgb '#d62728' pt 7 ps 0.6 lw 2 # Red
 set style line 5 lc rgb '#9467bd' pt 7 ps 0.6 lw 2 # Purple
 # Plot 1: 1D RW Trajectory
 set output 'plots/plot1_1d_traj.png'
-set title "1D Random Walk Trajectory"
+# set title "1D Random Walk Trajectory"
 set xlabel "Time t"
 set ylabel "Position x(t)"
 unset logscale
@@ -25,7 +25,7 @@ plot "01_1d_random_walk/results/dat/ran_gen_1traj.dat" using 4:2 with lines ls 1
 
 # Plot 2: 1D RW x^2 log-log
 set output 'plots/plot2_1d_x2_loglog.png'
-set title "1D Random Walk x^2(t) [Single Trajectory]"
+# set title "1D Random Walk x^2(t) [Single Trajectory]"
 set autoscale xy
 set xlabel "Time t"
 set ylabel "x^2(t)"
@@ -35,7 +35,7 @@ plot "01_1d_random_walk/results/dat/ran_gen_1traj.dat" using 4:3 with lines ls 4
 
 # Plot 3: 1D RW Mean <x^2> log-log
 set output 'plots/plot3_1d_x2_mean.png'
-set title "1D Random Walk {/Symbol \341}x^2(t){/Symbol \361} [Mean over 5000 instances]"
+# set title "1D Random Walk {/Symbol \341}x^2(t){/Symbol \361} [Mean over 5000 instances]"
 set xlabel "Time t"
 set ylabel "{/Symbol \341}x^2(t){/Symbol \361}"
 set logscale xy
@@ -45,7 +45,7 @@ plot "01_1d_random_walk/results/dat/x2_mean_5000.dat" using 1:2 title "{/Symbol 
 # Plot 4: 2D RW Trajectory (1M steps)
 set terminal pngcairo size 1400,1155 enhanced font 'Arial,24' rounded
 set output 'plots/plot4_2d_traj.png'
-set title "2D Random Walk Trajectory (1,000,000 steps)"
+# set title "2D Random Walk Trajectory (1,000,000 steps)"
 set xlabel "x_1(t)"
 set ylabel "x_2(t)"
 unset logscale
@@ -58,7 +58,7 @@ set terminal pngcairo size 1400,1155 enhanced font 'Arial,24' rounded
 set size ratio 0
 set xtics norotate
 set output 'plots/plot5_2d_P_x.png'
-set title "Probability Distribution P(x_1) in 2D RW"
+# set title "Probability Distribution P(x_1) in 2D RW"
 set xlabel "x_1"
 set ylabel "P(x_1(t))"
 unset logscale
@@ -89,7 +89,7 @@ set terminal pngcairo size 1400,1000 enhanced font 'Arial,24' rounded
 set bmargin 7
 set tmargin 1
 set output 'plots/plot6_2d_P_x1x2.png'
-set title "P(x_1(t), x_2(t)) at t=10^5"
+# set title "P(x_1(t), x_2(t)) at t=10^5"
 set key right top Right samplen 2
 set xlabel "x_1(t)"
 set ylabel "x_2(t)"
@@ -114,7 +114,7 @@ set terminal pngcairo size 1400,1155 enhanced font 'Arial,24' rounded
 set bmargin 5
 set tmargin 3
 set output 'plots/plot7_diff_rho.png'
-set title "Diffusion Coefficient D({/Symbol r}, t) for L=80"
+# set title "Diffusion Coefficient D({/Symbol r}, t) for L=80"
 set xlabel "Time (sweeps)"
 set ylabel "D({/Symbol r}, t)"
 unset dgrid3d
@@ -136,7 +136,7 @@ plot \
 
 # Plot 8: Diffusion Coefficient (L variation)
 set output 'plots/plot8_diff_L.png'
-set title "Diffusion Coefficient D({/Symbol r}=0.6, t) vs L"
+# set title "Diffusion Coefficient D({/Symbol r}=0.6, t) vs L"
 set xlabel "Time (sweeps)"
 set ylabel "D({/Symbol r}, t)"
 unset logscale x

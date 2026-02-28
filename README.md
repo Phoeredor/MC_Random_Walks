@@ -42,23 +42,23 @@ All simulations use the **PCG32** pseudo-random number generator for high-qualit
 
 ### 1D Random Walk
 
-| Trajectory $x(t)$ | $\langle x^2(t) \rangle$ log-log | $\langle x^2(t) \rangle$ mean |
+| 1D Random Walk Trajectory $x(t)$ | 1D Random Walk $x^2(t)$ [Single Trajectory] | 1D Random Walk $\langle x^2(t) \rangle$ [Mean over 5000 instances] |
 |:---:|:---:|:---:|
 | ![1D trajectory](plots/plot1_1d_traj.png) | ![x² log-log](plots/plot2_1d_x2_loglog.png) | ![x² mean](plots/plot3_1d_x2_mean.png) |
 
 ### 2D Random Walk
 
-| 2D Trajectory ($10^6$ steps) | Marginal $P(x_1)$ |
+| 2D Random Walk Trajectory ($10^6$ steps) | Probability Distribution $P(x_1(t))$ in 2D RW |
 |:---:|:---:|
 | ![2D trajectory](plots/plot4_2d_traj.png) | ![P(x)](plots/plot5_2d_P_x.png) |
 
-| Joint Probability $P(x_1, x_2)$ at $t = 10^5$ |
+| $P(x_1(t), x_2(t))$ at $t = 10^5$ |
 |:---:|
 | ![P(x1,x2)](plots/plot6_2d_P_x1x2.png) |
 
 ### Diffusion Coefficient
 
-| $D(\rho, t)$ — varying density $\rho$ | $D(\rho, t)$ — varying lattice size $L$ |
+| Diffusion Coefficient $D(\rho, t)$ for $L=80$ | Diffusion Coefficient $D(\rho=0.6, t)$ vs $L$ |
 |:---:|:---:|
 | ![D vs rho](plots/plot7_diff_rho.png) | ![D vs L](plots/plot8_diff_L.png) |
 
