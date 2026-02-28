@@ -19,20 +19,20 @@ MC_Random_Walks/
 ## 🔬 Simulations
 
 ### 1D Random Walk (`01_1d_random_walk`)
-- Symmetric random walk on ℤ with ±1 steps
-- Ensemble average ⟨x²(t)⟩ over 5000 independent realizations
-- Verification of the diffusive scaling ⟨x²(t)⟩ = t
+- Symmetric random walk on $\mathbb{Z}$ with $\pm 1$ steps
+- Ensemble average $\langle x^2(t) \rangle$ over 5000 independent realizations
+- Verification of the diffusive scaling $\langle x^2(t) \rangle = t$
 
 ### 2D Random Walk (`02_2d_random_walk`)
-- Lattice random walk on ℤ² with nearest-neighbor steps
-- Trajectory visualization over 10⁶ steps
-- Marginal distribution P(x₁) at fixed times t = 10³, 10⁴, 10⁵ compared with Gaussian fits
-- Joint probability P(x₁, x₂) at t = 10⁵ with theoretical Gaussian surface
+- Lattice random walk on $\mathbb{Z}^2$ with nearest-neighbor steps
+- Trajectory visualization over $10^6$ steps
+- Marginal distribution $P(x_1)$ at fixed times $t = 10^3, 10^4, 10^5$ compared with Gaussian fits
+- Joint probability $P(x_1, x_2)$ at $t = 10^5$ with theoretical Gaussian surface
 
 ### Diffusion Coefficient (`03_diffusion_coefficient`)
-- Lattice gas model on a 2D periodic lattice (L×L)
-- Measurement of D(ρ, t) = ⟨Δr²⟩ / (4t) with error bars
-- Dependence on particle density ρ and lattice size L
+- Lattice gas model on a 2D periodic lattice ($L \times L$)
+- Measurement of $D(\rho, t) = \langle \Delta r^2 \rangle / (4t)$ with error bars
+- Dependence on particle density $\rho$ and lattice size $L$
 
 All simulations use the **PCG32** pseudo-random number generator for high-quality, reproducible randomness.
 
@@ -42,23 +42,23 @@ All simulations use the **PCG32** pseudo-random number generator for high-qualit
 
 ### 1D Random Walk
 
-| Trajectory x(t) | ⟨x²(t)⟩ log-log | ⟨x²(t)⟩ mean |
+| Trajectory $x(t)$ | $\langle x^2(t) \rangle$ log-log | $\langle x^2(t) \rangle$ mean |
 |:---:|:---:|:---:|
 | ![1D trajectory](plots/plot1_1d_traj.png) | ![x² log-log](plots/plot2_1d_x2_loglog.png) | ![x² mean](plots/plot3_1d_x2_mean.png) |
 
 ### 2D Random Walk
 
-| 2D Trajectory (10⁶ steps) | Marginal P(x₁) |
+| 2D Trajectory ($10^6$ steps) | Marginal $P(x_1)$ |
 |:---:|:---:|
 | ![2D trajectory](plots/plot4_2d_traj.png) | ![P(x)](plots/plot5_2d_P_x.png) |
 
-| Joint Probability P(x₁, x₂) at t = 10⁵ |
+| Joint Probability $P(x_1, x_2)$ at $t = 10^5$ |
 |:---:|
 | ![P(x1,x2)](plots/plot6_2d_P_x1x2.png) |
 
 ### Diffusion Coefficient
 
-| D(ρ, t) — varying density ρ | D(ρ, t) — varying lattice size L |
+| $D(\rho, t)$ — varying density $\rho$ | $D(\rho, t)$ — varying lattice size $L$ |
 |:---:|:---:|
 | ![D vs rho](plots/plot7_diff_rho.png) | ![D vs L](plots/plot8_diff_L.png) |
 
